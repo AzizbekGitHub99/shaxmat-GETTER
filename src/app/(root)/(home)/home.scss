@@ -1,0 +1,113 @@
+.title {
+  color: var(--main-color);
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 40px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.hero {
+  background-image: url("/images/hero-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 825px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: end;
+  margin-bottom: 60px;
+  &__card {
+    display: flex;
+    justify-content: space-between;
+    &__left {
+      flex: 1;
+      h1 {
+        font-weight: 700;
+        width: 85%;
+        font-size: 32px;
+        color: white;
+        margin-bottom: 15px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 12px;
+        color: white;
+        opacity: 0.6;
+        &:last-child {
+          margin-top: 70px;
+        }
+      }
+    }
+    &__right {
+      flex: 1;
+      .img-box {
+        margin-left: auto;
+        height: 230px;
+        width: 90%;
+        position: relative;
+      }
+    }
+  }
+}
+
+.news-and-announces {
+  margin-bottom: 40px;
+  &__container {
+    display: flex;
+    gap: 24px;
+    .news {
+      flex-grow: 1;
+      max-width: 50%;
+      &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px 20px;
+      }
+    }
+    .announces {
+      flex-grow: 1;
+      max-width: 50%;
+      &__wrapper {
+        padding: 70px;
+        background-color: rgba($color: #835b4a, $alpha: 0.1);
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .announce {
+          color: var(--main-color);
+          
+          h1 {
+            font-size: 24px;
+            font-weight: 800;
+            margin-bottom: 10px;
+          }
+          p {
+            font-size: 15px;
+            font-weight: 500;
+            opacity: 0.5;
+          }
+        }
+        &__btn{
+          background-color: white;
+          margin-top: 56px;
+          color: var(--main-color);
+          font-size: 16px;
+          padding: 20px 0;
+          border: none;
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+.services{
+  &__wrapper{
+    padding: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    background: url("/public/images/hero-bg.jpg");
+  }
+}
