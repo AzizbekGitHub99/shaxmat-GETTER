@@ -1,0 +1,93 @@
+.main {
+  &__container {
+    display: flex;
+    gap: 25px;
+    .aside {
+      width: 300px;
+      ul {
+        padding: 50px 0 50px 40px;
+        border: 1px solid rgba($color: #04305b, $alpha: 0.2);
+        margin-bottom: 40px;
+        li {
+          margin-bottom: 20px;
+          list-style: none;
+          font-size: 18px;
+          font-weight: 600;
+          a {
+            text-decoration: none;
+          }
+          .active {
+            color: #0081ff;
+          }
+        }
+      }
+      .president-site {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        border: 1px solid rgba($color: #04305b, $alpha: 0.2);
+
+        padding: 50px 25px;
+        .img-box {
+          position: relative;
+          height: 134px;
+          width: 132px;
+        }
+        p {
+          text-align: center;
+        }
+      }
+    }
+    .mside {
+      width: calc(100% - 300px);
+      margin-bottom: 110px;
+      &__wrapper {
+        margin-bottom: 66px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+      }
+      .pagination {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        button {
+          height: 42px;
+          width: 42px;
+          border-radius: 50%;
+          background-color: white;
+          cursor: pointer;
+          transition: 0.4s;
+          &:first-child {
+            box-shadow: 7px 8px 24px 0 rgba($color: #355573, $alpha: 0.15);
+            &:hover {
+              box-shadow: 7px 8px 24px 0 rgba($color: #355573, $alpha: 0.4);
+            }
+          }
+          &:last-child {
+            box-shadow: -7px 8px 24px 0 rgba($color: #355573, $alpha: 0.15);
+            &:hover {
+              box-shadow: -7px 8px 24px 0 rgba($color: #355573, $alpha: 0.4);
+            }
+          }
+        }
+        ul {
+          display: flex;
+          gap: 20px;
+          li {
+            cursor: pointer;
+            list-style: none;
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--main-color);
+            opacity: 0.4;
+            &:nth-child(2) {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}

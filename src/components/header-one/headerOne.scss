@@ -1,0 +1,21 @@
+.header-one {
+  position: sticky;
+  height: 230px;
+  margin-bottom: -230px;
+  top: -90px;
+  .top {
+    height: 90px;
+    &__container {
+      
+    }
+  }
+  .bottom {
+    &__container {
+      .logo {
+        position: relative;
+        width: 150px;
+        height: 130px;
+      }
+    }
+  }
+}

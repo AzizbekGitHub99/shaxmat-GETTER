@@ -1,6 +1,8 @@
 import { Fragment } from "react";
+import Headers from "@/components/Headers";
 import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+
+import "../globals.css"
 
 export const metadata = {
   title: "Shaxmat Federatsiyasi | GETTER",
@@ -10,7 +12,7 @@ export const metadata = {
 export default function MainLayout({ children }) {
   return (
     <Fragment>
-      <Header />
+      <Headers />
       <main>{children}</main>
       <Footer />
     </Fragment>

@@ -1,6 +1,5 @@
 "use client";
 
-import ReactPlayer from "react-player";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -9,10 +8,11 @@ import ServiceCard from "@/components/service-card";
 import EmailInput from "@/components/email-input";
 
 import "./home.scss";
+import { Fragment } from "react";
 
 export default function Home() {
   return (
-    <main>
+    <Fragment>
       <section className="hero">
         <div className="container">
           <div className="hero__card">
@@ -58,9 +58,9 @@ export default function Home() {
                 <h1>{`8,10,12,14,16,18 yoshgacha bo‘lgan o‘smirlar o‘rtasida Osiyo chempionati`}</h1>
                 <p>11 Avgust 2022</p>
               </div>
-              <button className="announces__wrapper__btn">
+              <Link className="announces__wrapper__btn" href="/news">
                 {`barcha e'lonlar`}
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -156,6 +156,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </main>
+    </Fragment>
   );
 }
