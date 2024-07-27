@@ -6,6 +6,7 @@ form {
     border: none;
     outline: none;
     padding-left: 16px;
+    font-size: 20px;
     &::placeholder {
       font-size: 20px;
       color: var(--main-color);
@@ -21,5 +22,6 @@ form {
     background-color: #77574c;
     font-size: 16px;
     color: white;
+    cursor: pointer;
   }
 }
