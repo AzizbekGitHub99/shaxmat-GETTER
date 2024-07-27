@@ -1,14 +1,16 @@
 .header-two {
   position: sticky;
-  // height: 124px;
+  background-color: white;
+  z-index: 100;
   margin-bottom: 0;
+  border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
   top: 0px;
   .top {
     &__container {
-      
     }
   }
   .bottom {
+    padding-bottom: 15px;
     &__container {
       .logo {
         position: relative;

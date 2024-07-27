@@ -4,9 +4,9 @@ import Image from "next/image";
 
 import Breadcrumb from "@/components/breadcrumb";
 import NavLink from "@/components/navlink";
+import NewsCard from "@/components/news-card";
 
 import "./news.scss";
-import NewsCard from "@/components/news-card";
 
 const News = () => {
   return (
