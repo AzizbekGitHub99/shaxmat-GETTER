@@ -44,16 +44,16 @@ const Carousel = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <Image src="/assets/images/slider-img.jpg" alt="Slide" fill />
+          <Image src="/assets/images/slider-img.jpg" alt="Slide" fill priority/>
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/assets/images/hero-card.jpg" alt="Slide" fill />
+          <Image src="/assets/images/hero-card.jpg" alt="Slide" fill priority/>
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/assets/images/about.jpg" alt="Slide" fill />
+          <Image src="/assets/images/about.jpg" alt="Slide" fill priority/>
         </SwiperSlide>
         <SwiperSlide>
-          <Image src="/assets/images/card.png" alt="Slide" fill />
+          <Image src="/assets/images/card.png" alt="Slide" fill priority/>
         </SwiperSlide>
       </Swiper>
     </>
