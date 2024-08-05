@@ -29,7 +29,7 @@ const News = () => {
                 <NavLink href="/">Turnirlar</NavLink>
               </li>
             </ul>
-            <Link href="https://president.uz" className="president-site">
+            <Link href="https://president.uz" className="president-site" target="_blank">
               <div className="img-box">
                 <Image src="/assets/images/gerb.png" fill alt="gerb" />
               </div>

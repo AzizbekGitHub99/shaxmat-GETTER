@@ -120,6 +120,18 @@
   }
 }
 
+.tournaments-and-clubs{
+  &__container{
+    display: flex;
+    .tournaments{
+      width: 50%;
+    }
+    .clubs{
+      width: 50%;
+    }
+  }
+}
+
 .about {
   margin-bottom: 250px;
   &-container {

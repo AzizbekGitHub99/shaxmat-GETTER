@@ -1,0 +1,53 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  position: relative;
+  height: 500px;
+  width: 500px;
+  background-position: center;
+  background-size: cover;
+  img {
+    object-fit: cover;
+  }
+}
+
+.swiper-pagination-bullet {
+  position: relative;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background: none;
+  opacity: 1;
+  svg {
+    stroke: #ffffff50;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    fill: none;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 50.27;
+    transform: rotate(-90deg);
+  }
+}
+
+.swiper-pagination-bullet-active {
+  svg {
+    stroke: white;
+    animation: circleBar 6600ms linear;
+  }
+}
+
+@keyframes circleBar {
+  from {
+    stroke-dashoffset: 50.27px;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}

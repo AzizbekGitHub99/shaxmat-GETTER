@@ -9,6 +9,7 @@ import EmailInput from "@/components/email-input";
 
 import "./home.scss";
 import { Fragment } from "react";
+import Carousel from "@/components/carousel";
 
 export default function Home() {
   return (
@@ -78,6 +79,14 @@ export default function Home() {
             <ServiceCard />
             <ServiceCard />
           </div>
+        </div>
+      </section>
+      <section className="tournaments-and-clubs">
+        <div className="container tournaments-and-clubs__container">
+        <div className="tournaments">
+          <Carousel/>
+        </div>
+        <div className="clubs"></div>
         </div>
       </section>
       <section className="about">

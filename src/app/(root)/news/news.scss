@@ -12,7 +12,7 @@
           margin-bottom: 20px;
           list-style: none;
           font-size: 18px;
-          font-weight: 600;
+          font-weight: 400;
           a {
             text-decoration: none;
           }
@@ -25,14 +25,15 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-decoration: none;
         justify-content: space-around;
         border: 1px solid rgba($color: #04305b, $alpha: 0.2);
-
         padding: 50px 25px;
         .img-box {
           position: relative;
           height: 134px;
           width: 132px;
+          margin-bottom: 27px;
         }
         p {
           text-align: center;
