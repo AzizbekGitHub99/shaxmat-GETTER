@@ -9,6 +9,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import "./carousel.scss";
+import Link from "next/link";
 
 const Carousel = () => {
   const pagination = {
@@ -43,17 +44,21 @@ const Carousel = () => {
         modules={[EffectFade, Pagination, Autoplay]}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <Image src="/assets/images/slider-img.jpg" alt="Slide" fill priority/>
+        <SwiperSlide style={{backgroundImage: "url(/assets/images/slider-img.jpg)"}}>
+          <Link href="#">Turnirlar</Link>
+          <h1>2022 Central Asia Chess champion ships</h1>
         </SwiperSlide>
-        <SwiperSlide>
-          <Image src="/assets/images/hero-card.jpg" alt="Slide" fill priority/>
+        <SwiperSlide style={{backgroundImage: "url(/assets/images/hero-card.jpg)"}}>
+          <Link href="#">Turnirlar</Link>
+          <h1>2022 Central Asia Chess champion ships</h1>
         </SwiperSlide>
-        <SwiperSlide>
-          <Image src="/assets/images/about.jpg" alt="Slide" fill priority/>
+        <SwiperSlide style={{backgroundImage: "url(/assets/images/slider-img.jpg)"}}>
+          <Link href="#">Turnirlar</Link>
+          <h1>2022 Central Asia Chess champion ships</h1>
         </SwiperSlide>
-        <SwiperSlide>
-          <Image src="/assets/images/card.png" alt="Slide" fill priority/>
+        <SwiperSlide style={{backgroundImage: "url(/assets/images/slider-img.jpg)"}}>
+          <Link href="#">Turnirlar</Link>
+          <h1>2022 Central Asia Chess champion ships</h1>
         </SwiperSlide>
       </Swiper>
     </>

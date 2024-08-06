@@ -83,10 +83,61 @@ export default function Home() {
       </section>
       <section className="tournaments-and-clubs">
         <div className="container tournaments-and-clubs__container">
-        <div className="tournaments">
-          <Carousel/>
-        </div>
-        <div className="clubs"></div>
+          <div className="tournaments">
+            <Carousel />
+          </div>
+          <div className="clubs">
+            <div className="clubs__wrapper">
+              <Link href="#">Klublar</Link>
+              <div className="popular-clubs">
+                <div className="popular-club">
+                  <div className="popular-club__head">
+                    <Image src="/assets/images/club.png" fill alt="popular" />
+                  </div>
+                  <div className="popular-club__body">
+                    <h2>Mahorat Club</h2>
+                    <p>{`678 a'zolari`}</p>
+                  </div>
+                </div>
+                <div className="popular-club">
+                  <div className="popular-club__head">
+                    <Image src="/assets/images/club.png" fill alt="popular" />
+                  </div>
+                  <div className="popular-club__body">
+                    <h2>Virtual Chess</h2>
+                    <p>{`678 a'zolari`}</p>
+                  </div>
+                </div>
+              </div>
+              <div className="other-clubs">
+                <div className="other-clubs__box">
+                  <div className="other-club">
+                    <Image src="/assets/images/club.png" fill alt="popular" />
+                  </div>
+                  <div className="other-club">
+                    <Image src="/assets/images/club.png" fill alt="popular" />
+                  </div>
+                  <div className="other-club">
+                    <Image src="/assets/images/club.png" fill alt="popular" />
+                  </div>
+                  <div className="other-club">
+                    <Image src="/assets/images/club.png" fill alt="popular" />
+                  </div>
+                  <div className="other-club">
+                    <Image src="/assets/images/club.png" fill alt="popular" />
+                  </div>
+                  <div className="other-club">
+                    <Image src="/assets/images/club.png" fill alt="popular" />
+                  </div>
+                  <div className="other-club">
+                    <Image src="/assets/images/club.png" fill alt="popular" />
+                    <div className="overlay">+67</div>
+                  </div>
+                </div>
+                <button>View all</button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section className="about">
@@ -143,23 +194,39 @@ export default function Home() {
           <div className="left">
             <h2>{`Yangiliklarimizga obuna bo’ling`}</h2>
             <p>{`Shahmat bo’yicha eng so’nggi habarlarni birinchilardan bo’lib sizga yetkazamiz.`}</p>
-            <EmailInput/>
+            <EmailInput />
           </div>
           <div className="right">
             <h2>{`Ijtimoiy tarmoqlarimizga obuna bo’ling`}</h2>
             <p>{`Federatsiyaning eng so’nggi yangiliklaridan birinchilardan bo’lib habardor bo’ling.`}</p>
             <div className="socials">
-              <Link className="img-box" href="https://www.youtube.com/" target="_blank">
-                <Image src="/assets/icons/instagram.png" fill alt="social"/>
+              <Link
+                className="img-box"
+                href="https://www.youtube.com/"
+                target="_blank"
+              >
+                <Image src="/assets/icons/instagram.png" fill alt="social" />
               </Link>
-              <Link className="img-box" href="https://www.youtube.com/" target="_blank">
-                <Image src="/assets/icons/facebook.png" fill alt="social"/>
+              <Link
+                className="img-box"
+                href="https://www.youtube.com/"
+                target="_blank"
+              >
+                <Image src="/assets/icons/facebook.png" fill alt="social" />
               </Link>
-              <Link className="img-box" href="https://www.youtube.com/" target="_blank">
-                <Image src="/assets/icons/twitter.png" fill alt="social"/>
+              <Link
+                className="img-box"
+                href="https://www.youtube.com/"
+                target="_blank"
+              >
+                <Image src="/assets/icons/twitter.png" fill alt="social" />
               </Link>
-              <Link className="img-box" href="https://www.youtube.com/" target="_blank">
-                <Image src="/assets/icons/telegram.png" fill alt="social"/>
+              <Link
+                className="img-box"
+                href="https://www.youtube.com/"
+                target="_blank"
+              >
+                <Image src="/assets/icons/telegram.png" fill alt="social" />
               </Link>
             </div>
           </div>

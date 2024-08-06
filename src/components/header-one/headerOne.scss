@@ -7,15 +7,140 @@
   .top {
     height: 90px;
     &__container {
-      
+      display: flex;
+      justify-content: space-between;
+      padding-top: 15px;
+      &__left {
+        display: flex;
+        span {
+          margin-right: 20px;
+          font-size: 13px;
+          font-weight: 300;
+          opacity: 0.6;
+          color: white;
+          cursor: pointer;
+        }
+        .lan-btns {
+          display: flex;
+          align-items: flex-start;
+          gap: 10px;
+          button {
+            font-weight: 300;
+            font-size: 13px;
+            opacity: 0.6;
+            color: white;
+            background: none;
+            &:nth-child(2) {
+              opacity: 1;
+            }
+          }
+          margin: 0 30px;
+        }
+      }
+      &__right {
+        display: flex;
+        span {
+          font-size: 13px;
+          font-weight: 300;
+          color: white;
+          text-align: end;
+          &:nth-child(2) {
+            margin: 0 35px 0 24px;
+          }
+          p {
+            opacity: 0.6;
+          }
+        }
+        &__address {
+          color: white;
+          font-size: 13px;
+          font-weight: 300;
+          width: 239px;
+          text-align: end;
+          opacity: 0.6;
+        }
+      }
     }
   }
   .bottom {
     &__container {
+      display: flex;
       .logo {
         position: relative;
         width: 150px;
         height: 130px;
+      }
+      &__menu {
+        width: calc(100% - 150px);
+        padding-left: 30px;
+        display: flex;
+        gap: 24px;
+        flex-wrap: wrap;
+        align-content: end;
+        margin-bottom: 10px;
+        &__up {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          .all-btn {
+            background: none;
+            display: flex;
+            align-items: center;
+            color: white;
+            gap: 9px;
+            span {
+              margin-right: 0;
+              position: relative;
+              width: 24px;
+              height: 8px;
+              &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                left: 0;
+                top: 0;
+                height: 1px;
+                background-color: white;
+              }
+              &::before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                left: 0;
+                bottom: 0;
+                height: 1px;
+                background-color: white;
+              }
+            }
+          }
+          .auth-btns {
+            display: flex;
+            gap: 10px;
+            button {
+              background-color: rgba($color: white, $alpha: 0.1);
+              border-radius: 3px;
+              display: flex;
+              align-items: center;
+              gap: 3px;
+              padding: 8px 22px;
+              color: white;
+            }
+          }
+        }
+        &__down {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          li {
+            list-style: none;
+            font-size: 18px;
+            font-weight: 400;
+            a {
+              text-decoration: none;
+              color: white;
+            }
+          }
+        }
       }
     }
   }

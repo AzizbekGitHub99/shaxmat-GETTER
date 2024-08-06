@@ -53,7 +53,7 @@
 }
 
 .news-and-announces {
-  margin-bottom: 40px;
+  margin-bottom: 45px;
   &__container {
     display: flex;
     gap: 24px;
@@ -120,14 +120,110 @@
   }
 }
 
-.tournaments-and-clubs{
-  &__container{
+.tournaments-and-clubs {
+  margin-bottom: 170px;
+  &__container {
     display: flex;
-    .tournaments{
-      width: 50%;
+    align-items: stretch;
+    gap: 25px;
+    .tournaments {
+      flex-grow: 1;
+      max-width: 50%;
     }
-    .clubs{
-      width: 50%;
+    .clubs {
+      max-width: 50%;
+      flex-grow: 1;
+      &__wrapper {
+        background-color: #9462491a;
+        padding: 40px 50px;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        a {
+          text-decoration: none;
+          border-radius: 30px;
+          padding: 14px 30px;
+          background-color: #77574c33;
+          color: #77574c;
+          font-weight: 800;
+          font-size: 18px;
+        }
+        .popular-clubs {
+          display: flex;
+          gap: 45px;
+          .popular-club {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            &__head {
+              position: relative;
+              width: 180px;
+              height: 180px;
+              img {
+                border-radius: 50%;
+                object-fit: cover;
+              }
+            }
+            &__body {
+              color: var(--main-color);
+              h2 {
+                font-weight: 700;
+                font-size: 22px;
+              }
+              p {
+                font-weight: 400;
+                font-size: 14px;
+                opacity: 0.4;
+              }
+            }
+          }
+        }
+        .other-clubs {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          &__box{
+            display: flex;
+            .other-club {
+              position: relative;
+              margin-right: -40px;
+              width: 90px;
+              height: 90px;
+              border: 6px solid white;
+              border-radius: 50%;
+              cursor: pointer;
+              &:last-child {
+                .overlay {
+                  position: absolute;
+                  inset: 0;
+                  background: #04305bcc;
+                  border-radius: 50%;
+                  color: white;
+                  display: flex;
+                  align-items: center;
+                  font-size: 22px;
+                  font-weight: 400;
+                  justify-content: center;
+                }
+              }
+              img {
+                border-radius: 50%;
+              }
+            }
+          }
+          button {
+            color: #77574c;
+            font-weight: 700;
+            font-size: 22px;
+            margin-right: 0;
+            cursor: pointer;
+            text-decoration: none;
+          }
+        }
+      }
     }
   }
 }
@@ -182,6 +278,7 @@
           font-weight: 400;
           font-size: 18px;
           margin-left: auto;
+          text-decoration: none;
         }
       }
       &__wrapper {
@@ -200,6 +297,7 @@
           img {
             object-fit: cover;
             object-position: center;
+            cursor: pointer;
           }
         }
       }
@@ -218,6 +316,7 @@
           font-weight: 400;
           font-size: 18px;
           margin-left: auto;
+          text-decoration: none;
         }
       }
       .video-box {
@@ -261,10 +360,10 @@
         margin-bottom: 16px;
         max-width: 420px;
       }
-      .socials{
+      .socials {
         display: flex;
         gap: 24px;
-        .img-box{
+        .img-box {
           position: relative;
           width: 32px;
           height: 32px;
