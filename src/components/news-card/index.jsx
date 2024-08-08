@@ -11,7 +11,7 @@ const NewsCard = ({ big }) => {
     <Fragment>
       {big == true ? (
         <Link
-          href="#"
+          href="/news/1"
           className="cardLg"
           style={{ backgroundImage: `url("/assets/images/card.png")` }}
         >
@@ -19,9 +19,9 @@ const NewsCard = ({ big }) => {
           <p>11 Avgust 2022</p>
         </Link>
       ) : (
-        <Link href="#" className="cardMd">
+        <Link href="/news/1" className="cardMd">
           <div className="cardMd__head">
-            <Image src="/assets/images/card.png" fill alt="card" />
+            <Image src="/assets/images/card.png" fill priority alt="card" />
           </div>
           <div className="cardMd__body">
             <h1>{`20 yoshgacha bo'lgan o'smirlar va qizlar o'rtasida G'arbiy Osiyo chempionati`}</h1>

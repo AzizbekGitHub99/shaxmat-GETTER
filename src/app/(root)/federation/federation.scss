@@ -2,12 +2,12 @@
   &__container {
     display: flex;
     gap: 25px;
-    margin-bottom: 420px;
     .aside {
       width: 300px;
       display: flex;
       flex-direction: column;
       gap: 40px;
+      margin-bottom: 200px;
       ul {
         padding: 50px 0 50px 40px;
         border: 1px solid rgba($color: #04305b, $alpha: 0.2);

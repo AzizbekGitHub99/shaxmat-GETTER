@@ -1,0 +1,119 @@
+.main {
+  &__container {
+    display: flex;
+    gap: 25px;
+    .mside {
+      width: calc(100% - 300px);
+      height: fit-content;
+      &__wrapper {
+        border: 1px solid rgba($color: #04305b, $alpha: 0.2);
+        padding: 30px 40px 30px 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin-bottom: 17px;
+        h1 {
+          color: var(--main-color);
+          font-weight: 600;
+          font-size: 24px;
+        }
+        p {
+          color: var(--main-color);
+          font-size: 18px;
+          font-weight: 400;
+        }
+        a {
+          color: var(--main-color);
+          font-size: 18px;
+          font-weight: 400;
+        }
+        .info {
+          display: flex;
+          justify-content: end;
+          align-items: center;
+          gap: 18px;
+          &__box {
+            color: var(--main-color);
+            font-size: 15px;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            gap: 3px;
+          }
+        }
+      }
+      .news-section {
+        margin-bottom: 100px;
+        h1 {
+          font-weight: 600;
+          font-size: 24px;
+          color: var(--main-color);
+          margin-bottom: 30px;
+        }
+        .news-row {
+          display: flex;
+          justify-content: space-between;
+          .cardMd {
+            &__body {
+              h1 {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .aside {
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      .payment {
+        background: linear-gradient(
+          140.6deg,
+          rgba(39, 46, 108, 0.3) 0.91%,
+          rgba(213, 117, 62, 0.3) 106.15%
+        );
+        padding: 11px 39px 45px 30px;
+        .images {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 15px;
+        }
+        h1 {
+          font-size: 30px;
+          font-weight: 700;
+          color: var(--main-color);
+          margin-bottom: 30px;
+        }
+        button {
+          padding: 8px 40px;
+          color: #77574c;
+          font-size: 18px;
+          font-weight: 500;
+          border-radius: 20px;
+          background-color: white;
+        }
+      }
+      .sites {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        justify-content: space-around;
+        border: 1px solid rgba($color: #04305b, $alpha: 0.2);
+        padding: 50px 25px;
+        .img-box {
+          position: relative;
+          height: 134px;
+          width: 132px;
+          margin-bottom: 27px;
+        }
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
