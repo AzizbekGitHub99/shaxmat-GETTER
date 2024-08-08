@@ -168,15 +168,15 @@ export default function Home() {
               Foto galareya <Link href="/albums">view all</Link>
             </h2>
             <div className="photo__wrapper">
-              <div className="img-box">
+              <Link href="/news/1" className="img-box">
                 <Image src="/assets/images/card.png" fill alt="photo" />
-              </div>
-              <div className="img-box">
+              </Link>
+              <Link href="/news/1" className="img-box">
                 <Image src="/assets/images/card.png" fill alt="photo" />
-              </div>
-              <div className="img-box">
+              </Link>
+              <Link href="/news/1" className="img-box">
                 <Image src="/assets/images/card.png" fill alt="photo" />
-              </div>
+              </Link>
             </div>
           </div>
           <div className="video">

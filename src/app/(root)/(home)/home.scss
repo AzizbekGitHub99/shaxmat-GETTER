@@ -61,8 +61,12 @@
       flex-grow: 1;
       max-width: 50%;
       &__wrapper {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        .cardLg{
+          grid-column: 1 / 2 span;
+        }
         gap: 24px 20px;
       }
     }

@@ -34,8 +34,11 @@
         .img-box {
           position: relative;
           height: 134px;
-          width: 132px;
+          width: 140px;
           margin-bottom: 27px;
+          img{
+            object-fit: contain;
+          }
         }
         p {
           text-align: center;
