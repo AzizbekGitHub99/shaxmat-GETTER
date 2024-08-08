@@ -12,8 +12,8 @@ const News = () => {
   return (
     <Fragment>
       <Breadcrumb />
-      <section className="main">
-        <div className="container main__container">
+      <section className="news__main">
+        <div className="container news__main__container">
           <div className="aside">
             <ul>
               <li>

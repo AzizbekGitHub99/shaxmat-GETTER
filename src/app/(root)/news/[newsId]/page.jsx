@@ -11,8 +11,8 @@ const SingleNews = () => {
   return (
     <Fragment>
       <Breadcrumb />
-      <section className="main">
-        <div className="container main__container">
+      <section className="single-new__main">
+        <div className="container single-new__main__container">
           <div className="mside">
             <div className="mside__wrapper">
               <h1>{`Maktab o'quvchilari o'rtasida Jahon chempionati`}</h1>

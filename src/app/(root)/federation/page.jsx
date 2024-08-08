@@ -12,8 +12,8 @@ const Federation = () => {
   return (
     <Fragment>
         <Breadcrumb/>
-        <section className="main">
-        <div className="container main__container">
+        <section className="federation__main">
+        <div className="container federation__main__container">
           <div className="aside">
             <ul>
               <li>
