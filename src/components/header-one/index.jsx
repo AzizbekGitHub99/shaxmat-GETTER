@@ -33,9 +33,9 @@ const HeaderOne = () => {
       </div>
       <div className="bottom">
         <div className="container bottom__container">
-          <div className="logo">
+          <Link href="/" className="logo">
             <Image src="/assets/icons/logo.png" fill alt="logo" />
-          </div>
+          </Link>
           <div className="bottom__container__menu">
             <div className="bottom__container__menu__up">
               <button className="all-btn">
@@ -56,7 +56,7 @@ const HeaderOne = () => {
             </div>
             <ul className="bottom__container__menu__down">
               <li>
-                <Link href="#">Federatsiya</Link>
+                <Link href="/federation">Federatsiya</Link>
               </li>
               <li>
                 <Link href="#">Xalqaro munosabatlar</Link>

@@ -165,7 +165,7 @@ export default function Home() {
         <div className="container galeries__container">
           <div className="photo">
             <h2>
-              Foto galareya <Link href="#">view all</Link>
+              Foto galareya <Link href="/albums">view all</Link>
             </h2>
             <div className="photo__wrapper">
               <div className="img-box">

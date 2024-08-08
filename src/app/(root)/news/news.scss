@@ -4,10 +4,12 @@
     gap: 25px;
     .aside {
       width: 300px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
       ul {
         padding: 50px 0 50px 40px;
         border: 1px solid rgba($color: #04305b, $alpha: 0.2);
-        margin-bottom: 40px;
         li {
           margin-bottom: 20px;
           list-style: none;
@@ -21,7 +23,7 @@
           }
         }
       }
-      .president-site {
+      .sites {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -45,9 +47,14 @@
       margin-bottom: 110px;
       &__wrapper {
         margin-bottom: 66px;
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto auto;
         gap: 25px;
+        .cardLg{
+          grid-column: 1 / span 2;
+          flex-grow: 2;
+        }
       }
       .pagination {
         display: flex;
@@ -89,6 +96,41 @@
           }
         }
       }
+    }
+  }
+}
+
+.competition {
+  height: 400px;
+  margin-bottom: 40px;
+  &__container {
+    height: 100%;
+    background-color: #f4efed;
+    position: relative;
+    padding: 80px 112px;
+    h1 {
+      color: var(--main-color);
+      font-weight: 800;
+      font-size: 24px;
+    }
+    p {
+      color: var(--main-color);
+      font-weight: 400;
+      font-size: 13px;
+      width: 550px;
+      margin-bottom: 34px;
+    }
+    .more {
+      font-size: 14px;
+      padding: 19px 42px;
+      background-color: white;
+      border-radius: 100px;
+    }
+    img {
+      position: absolute;
+      bottom: 0;
+      object-fit: cover;
+      right: 110px;
     }
   }
 }

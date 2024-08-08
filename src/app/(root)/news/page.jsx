@@ -29,11 +29,29 @@ const News = () => {
                 <NavLink href="/">Turnirlar</NavLink>
               </li>
             </ul>
-            <Link href="https://president.uz" className="president-site" target="_blank">
+            <Link href="https://president.uz" className="sites" target="_blank">
               <div className="img-box">
-                <Image src="/assets/images/gerb.png" fill alt="gerb" />
+                <Image
+                  src="/assets/images/gerb.png"
+                  fill
+                  priority
+                  quality={100}
+                  alt="gerb"
+                />
               </div>
               <p>{`O'zbekiston Respublikasi Prezidenti sayti`}</p>
+            </Link>
+            <Link href="https://president.uz" className="sites" target="_blank">
+              <div className="img-box">
+                <Image
+                  src="/assets/images/academy.png"
+                  fill
+                  priority
+                  quality={100}
+                  alt="academmy"
+                />
+              </div>
+              <p>{`Xalqaro shaxmat akademiyasiga`}</p>
             </Link>
           </div>
           <div className="mside">
@@ -76,6 +94,24 @@ const News = () => {
               </button>
             </div>
           </div>
+        </div>
+      </section>
+      <section className="competition">
+        <div className="container competition__container">
+          <h1>Central Asian Chess Cup 2023</h1>
+          <p>{`Umumiy mukofot jamg'armasi 18 000 AQSh dollarini tashkil qiladi. 
+          Turnir Shveytsariya tizimi (9 tur) bo‘yicha o‘tkaziladi. 
+          Vaqtni nazorat qilish quyidagicha - 90 daqiqa va birinchi yurishdan 
+          boshlab har bir harakat uchun 30 soniya.`}</p>
+          <button className="more">batafsil</button>
+          <Image
+            src="/assets/images/cup_img.png"
+            priority
+            width={400}
+            height={340}
+            quality={100}
+            alt="cup"
+          />
         </div>
       </section>
     </Fragment>
