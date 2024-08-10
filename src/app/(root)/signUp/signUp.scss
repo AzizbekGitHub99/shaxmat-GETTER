@@ -28,11 +28,30 @@
         }
         input {
           border: 1px solid #04305b33;
-          padding: 15px 14px;
           font-size: 18px;
+          padding: 15px 14px;
+          color: var(--main-color);
           &::placeholder {
+            color: var(--main-color);
             font-size: 18px;
             font-weight: 400;
+            opacity: .7;
+          }
+        }
+        .ant-picker {
+          border: 1px solid #04305b33;
+          padding: 15px 14px;
+          border-radius: 0;
+          input {
+            color: var(--main-color);
+            padding: 0;
+            border: none;
+            font-size: 18px;
+            line-height: normal;
+            &::placeholder{
+              color: var(--main-color);
+              opacity: .7;             
+            }
           }
         }
       }
@@ -68,9 +87,12 @@
           border: 1px solid #04305b33;
           padding: 15px 14px;
           font-size: 18px;
+          color: var(--main-color);
           &::placeholder {
+            color: var(--main-color);
             font-size: 18px;
             font-weight: 400;
+            opacity: .7;
           }
         }
       }
@@ -84,7 +106,7 @@
           grid-row: 1 / 1 span;
         }
         .image-box {
-            position: relative;
+          position: relative;
           padding: 13px;
           height: 100%;
           width: 170px;
@@ -94,15 +116,16 @@
           background-color: #f6f7f8;
           grid-column: 1 / 1 span;
           grid-row: 2 / 5 span;
-          img{
-object-fit: contain;
+          img {
+            object-fit: contain;
           }
         }
         input {
           display: none;
         }
         .download-label {
-          grid-column: 2 / 1 span;margin-top: auto;
+          grid-column: 2 / 1 span;
+          margin-top: auto;
           grid-row: 6 / 1 span;
           display: flex;
           gap: 5px;

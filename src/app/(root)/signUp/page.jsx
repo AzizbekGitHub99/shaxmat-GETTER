@@ -6,9 +6,14 @@ import Breadcrumb from "@/components/breadcrumb";
 
 import "./signUp.scss";
 import Image from "next/image";
+import { DatePicker } from "antd";
 
 const SignUp = () => {
   const [currentUser, setCurrentUser] = useState({});
+
+  const onChange = (date, dateString) => {
+    console.log(date, dateString);
+  };
 
   const downloadImage = (e) => {
     e.preventDefault();
@@ -32,11 +37,21 @@ const SignUp = () => {
               </div>
               <div className="input-box">
                 <label htmlFor="address">{`Tug'ilgan joy`}</label>
-                <input type="text" id="address" placeholder="Tug'ilgan joy" required />
+                <input
+                  type="text"
+                  id="address"
+                  placeholder="Tug'ilgan joy"
+                  required
+                />
               </div>
               <div className="input-box">
                 <label htmlFor="lastName">Familiya</label>
-                <input type="text" id="lastName" placeholder="Familiya" required />
+                <input
+                  type="text"
+                  id="lastName"
+                  placeholder="Familiya"
+                  required
+                />
               </div>
               <div className="input-box">
                 <label htmlFor="liveAddress">{`Yashash manzili`}</label>
@@ -53,7 +68,14 @@ const SignUp = () => {
               </div>
               <div className="input-box">
                 <label htmlFor="birthDay">{`Tug'ilgan kun`}</label>
-                <input type="date" id="birthDay" placeholder={`Tug'ilgan kun`} required />
+                <DatePicker
+                placeholder={`Tug'ilgan kun`}
+                  format={{
+                    format: "YYYY-MM-DD",
+                    type: "mask",
+                  }}
+                  onChange={onChange}
+                />
               </div>
             </div>
           </div>
@@ -64,7 +86,12 @@ const SignUp = () => {
                 <label htmlFor="passport">
                   Passport yoki Guvohnoma (Seriya va raqami)
                 </label>
-                <input type="text" id="passport" placeholder="Seriya raqami" required />
+                <input
+                  type="text"
+                  id="passport"
+                  placeholder="Seriya raqami"
+                  required
+                />
               </div>
               <div className="input-box image-input">
                 <label htmlFor="image-download">Image</label>
@@ -104,11 +131,16 @@ const SignUp = () => {
               </div>
               <div className="input-box">
                 <label htmlFor="lastName">Telefon raqami</label>
-                <input type="text" id="phone" placeholder="Telefon raqami" required />
+                <input
+                  type="text"
+                  id="phone"
+                  placeholder="Telefon raqami"
+                  required
+                />
               </div>
               <div className="input-box">
                 <label htmlFor="email">E-mail</label>
-                <input type="text" id="email" placeholder="E-mail" required />
+                <input type="email" id="email" placeholder="E-mail" required />
               </div>
               <div className="input-box">
                 <label htmlFor="educate">{`O'qish yoki ish joyi`}</label>
@@ -124,11 +156,21 @@ const SignUp = () => {
               </div>
               <div className="input-box">
                 <label htmlFor="payment">{`To'lov maqsadi`}</label>
-                <input type="text" id="payment" placeholder="To'lov maqsadi" required />
+                <input
+                  type="text"
+                  id="payment"
+                  placeholder="To'lov maqsadi"
+                  required
+                />
               </div>
               <div className="input-box">
                 <label htmlFor="password">Parol</label>
-                <input type="password" id="password" placeholder="Parol" required />
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="Parol"
+                  required
+                />
               </div>
               <button type="submit">Saqlash</button>
             </div>
