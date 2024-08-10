@@ -1,8 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
+
 import NavLink from "../navlink";
 
 import "./headerTwo.scss";
-import Link from "next/link";
 
 const HeaderTwo = () => {
   return (
@@ -111,8 +112,8 @@ const HeaderTwo = () => {
               </li>
             </ul>
             <div className="bottom__container__menu__auth-btns">
-              <button>{`Ro'yxatdan o'tish`}</button>
-              <button>
+              <Link href="/signUp">{`Ro'yxatdan o'tish`}</Link>
+              <Link href="/signIn">
                 <svg
                   width="16"
                   height="17"
@@ -130,7 +131,7 @@ const HeaderTwo = () => {
                   />
                 </svg>
                 Kirish
-              </button>
+              </Link>
             </div>
           </div>
         </div>

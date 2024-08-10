@@ -70,8 +70,9 @@
           height: 100%;
           display: flex;
           gap: 10px;
-          button {
+          a {
             display: flex;
+            text-decoration: none;
             height: fit-content;
             align-items: center;
             cursor: pointer;

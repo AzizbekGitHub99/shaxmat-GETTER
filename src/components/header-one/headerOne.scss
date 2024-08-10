@@ -118,8 +118,9 @@
           .auth-btns {
             display: flex;
             gap: 10px;
-            button {
+            a {
               background-color: rgba($color: white, $alpha: 0.1);
+              text-decoration: none;
               border-radius: 3px;
               display: flex;
               align-items: center;

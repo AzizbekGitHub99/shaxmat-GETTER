@@ -49,18 +49,18 @@ const Footer = () => {
               <h3>{`Toshkent shahar, Shayhontoxur tumani,I.Karimov ko'chasi 98A uy.`}</h3>
             </div>
             <div className="right__buttons">
-              <button>
+              <Link href="/signUp">
                 <span>
                   <Image src="/assets/icons/register.svg" fill alt="icon" />
                 </span>
                 Регистрация
-              </button>
-              <button>
+              </Link>
+              <Link href="/signIn">
                 <span>
                   <Image src="/assets/icons/log-in.svg" fill alt="icon" />
                 </span>
                 Вход
-              </button>
+              </Link>
             </div>
           </div>
         </div>

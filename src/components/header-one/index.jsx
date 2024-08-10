@@ -42,8 +42,8 @@ const HeaderOne = () => {
                 <span></span> Barchasi
               </button>
               <div className="auth-btns">
-                <button>{`Ro'yxatdan o'tish`}</button>
-                <button>
+                <Link href="/signUp">{`Ro'yxatdan o'tish`}</Link>
+                <Link href="/signIn">
                   <Image
                     src="/assets/icons/log-in.svg"
                     alt="lgin"
@@ -51,7 +51,7 @@ const HeaderOne = () => {
                     height={16}
                   />
                   Kirish
-                </button>
+                </Link>
               </div>
             </div>
             <ul className="bottom__container__menu__down">
