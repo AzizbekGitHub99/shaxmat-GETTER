@@ -2,10 +2,10 @@
   position: -webkit-sticky;
   position: sticky;
   height: 230px;
-  margin-bottom: 0;
+  margin-bottom: -230px;
   z-index: 100;
   top: -90px;
-  background-color: var(--main-color);
+  transition: all .2s linear;
   .top {
     height: 90px;
     &__container {
@@ -147,4 +147,9 @@
       }
     }
   }
+}
+
+.scrolled{
+  background-color: var(--main-color);
+  box-shadow: 0 0 10px 2px var(--main-color);
 }
