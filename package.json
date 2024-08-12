@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev & yarn next-video sync -w",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -11,9 +11,10 @@
   "dependencies": {
     "antd": "^5.20.0",
     "next": "14.2.5",
+    "next-video": "^1.1.4",
     "react": "^18",
     "react-dom": "^18",
-    "react-player": "^2.16.0",
+    "reactjs-media": "^3.0.6",
     "sass": "^1.77.8",
     "swiper": "^11.1.8"
   },

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
@@ -11,7 +11,7 @@ const HeaderOne = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const offset = window.scrollY;      
+      const offset = window.scrollY;
       if (offset > 220) {
         setScrolled(true);
       } else {
@@ -19,14 +19,15 @@ const HeaderOne = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
-    <header className={scrolled ? "header-one scrolled":"header-one"}>
+    <header className={scrolled ? "header-one scrolled" : "header-one"}>
       <div className="top">
         <div className="container top__container">
           <div className="top__container__left">

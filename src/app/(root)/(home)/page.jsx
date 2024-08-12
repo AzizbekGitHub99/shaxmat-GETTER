@@ -1,15 +1,18 @@
 "use client";
 
+import { Fragment } from "react";
 import Image from "next/image";
 import Link from "next/link";
+
+import Video from "next-video";
 
 import NewsCard from "@/components/news-card";
 import ServiceCard from "@/components/service-card";
 import EmailInput from "@/components/email-input";
+import Carousel from "@/components/carousel";
+import video from "/videos/HTML.mp4.json"
 
 import "./home.scss";
-import { Fragment } from "react";
-import Carousel from "@/components/carousel";
 
 export default function Home() {
   return (
@@ -184,7 +187,11 @@ export default function Home() {
               Video galareya <Link href="#">view all</Link>
             </h2>
             <div className="video-box">
-              <video src="/assets/videos/HTML.mp4" controls></video>
+              <Video
+                className="custom-video"
+                src={video}
+                poster={"/assets/images/videoImg.jpg"}
+              />
             </div>
           </div>
         </div>
@@ -205,28 +212,44 @@ export default function Home() {
                 href="https://www.youtube.com/"
                 target="_blank"
               >
-                <Image src="/assets/icons/instagram.png" fill alt="social" />
+                <Image
+                  src="/assets/icons/outline_instagram.png"
+                  fill
+                  alt="social"
+                />
               </Link>
               <Link
                 className="img-box"
                 href="https://www.youtube.com/"
                 target="_blank"
               >
-                <Image src="/assets/icons/facebook.png" fill alt="social" />
+                <Image
+                  src="/assets/icons/outline_facebook.png"
+                  fill
+                  alt="social"
+                />
               </Link>
               <Link
                 className="img-box"
                 href="https://www.youtube.com/"
                 target="_blank"
               >
-                <Image src="/assets/icons/twitter.png" fill alt="social" />
+                <Image
+                  src="/assets/icons/outline_twitter.png"
+                  fill
+                  alt="social"
+                />
               </Link>
               <Link
                 className="img-box"
                 href="https://www.youtube.com/"
                 target="_blank"
               >
-                <Image src="/assets/icons/telegram.png" fill alt="social" />
+                <Image
+                  src="/assets/icons/outline_telegram.png"
+                  fill
+                  alt="social"
+                />
               </Link>
             </div>
           </div>

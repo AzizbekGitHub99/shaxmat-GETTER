@@ -324,8 +324,14 @@
         }
       }
       .video-box {
+        width: 100%;
+        height: fit-content;
+        .custom-video{
+          --_accent-color: var(--main-color) !important;
+        }
         video {
           width: 100%;
+          height: 338px;
         }
       }
     }
