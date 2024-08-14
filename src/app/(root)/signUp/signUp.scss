@@ -36,7 +36,7 @@
             color: var(--main-color);
             font-size: 18px;
             font-weight: 400;
-            opacity: .7;
+            opacity: 0.7;
           }
         }
         .ant-picker {
@@ -49,9 +49,9 @@
             border: none;
             font-size: 18px;
             line-height: normal;
-            &::placeholder{
+            &::placeholder {
               color: var(--main-color);
-              opacity: .7;             
+              opacity: 0.7;
             }
           }
         }
@@ -94,7 +94,7 @@
             color: var(--main-color);
             font-size: 18px;
             font-weight: 400;
-            opacity: .7;
+            opacity: 0.7;
           }
         }
       }

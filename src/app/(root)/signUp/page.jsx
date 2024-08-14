@@ -19,10 +19,7 @@ const SignUp = () => {
     e.preventDefault();
     let res = { ...currentUser, image: URL.createObjectURL(e.target.files[0]) };
     setCurrentUser(res);
-    console.log(res);
   };
-  console.log(currentUser);
-
   return (
     <Fragment>
       <Breadcrumb />
@@ -69,7 +66,7 @@ const SignUp = () => {
               <div className="input-box">
                 <label htmlFor="birthDay">{`Tug'ilgan kun`}</label>
                 <DatePicker
-                placeholder={`Tug'ilgan kun`}
+                  placeholder={`Tug'ilgan kun`}
                   format={{
                     format: "YYYY-MM-DD",
                     type: "mask",

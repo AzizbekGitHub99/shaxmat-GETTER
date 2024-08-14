@@ -5,7 +5,7 @@
   margin-bottom: -230px;
   z-index: 100;
   top: -90px;
-  transition: all .2s linear;
+  transition: all 0.2s linear;
   .top {
     height: 90px;
     &__container {
@@ -80,6 +80,33 @@
         flex-wrap: wrap;
         align-content: end;
         margin-bottom: 10px;
+        .hidden-bottom {
+          display: none;
+          span {
+            margin-right: 20px;
+            font-size: 13px;
+            font-weight: 300;
+            opacity: 0.6;
+            color: white;
+            cursor: pointer;
+          }
+          .lan-btns {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin: 0 30px;
+            button {
+              font-weight: 300;
+              font-size: 13px;
+              opacity: 0.6;
+              color: white;
+              background: none;
+              &:nth-child(2) {
+                opacity: 1;
+              }
+            }
+          }
+        }
         &__up {
           display: flex;
           width: 100%;
@@ -149,7 +176,70 @@
   }
 }
 
-.scrolled{
+.scrolled {
   background-color: var(--main-color);
   box-shadow: 0 0 10px 2px var(--main-color);
+}
+
+@media (max-width: 1060px) {
+  .header-one {
+    height: 130px;
+    top: 0;
+    .top {
+      display: none;
+    }
+    .bottom {
+      &__container {
+        display: flex;
+        .logo {
+          position: relative;
+          width: 150px;
+          height: 130px;
+        }
+        &__menu {
+          .hidden-bottom {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+          }
+          &__down {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 630px) {
+  .header-one {
+    padding: 8px 0;
+    height: 100px;
+    .bottom {
+      &__container {
+        .logo {
+          width: 82px;
+          height: 70px;
+        }
+        &__menu {
+          width: calc(100% - 80px);
+          gap: 14px;
+          margin-bottom: 10px;
+          .hidden-bottom {
+            .lan-btns {
+              margin: 0;
+            }
+          }
+          &__up {
+            .auth-btns {
+              a {
+                &:first-child {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

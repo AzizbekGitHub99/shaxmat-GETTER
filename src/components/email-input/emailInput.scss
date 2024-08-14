@@ -1,5 +1,6 @@
 form {
   height: 50px;
+  display: flex;
   input {
     width: 280px;
     height: 100%;
@@ -23,5 +24,35 @@ form {
     font-size: 16px;
     color: white;
     cursor: pointer;
+  }
+}
+
+@media (max-width:500px) {
+  form {
+    height: 50px;
+    input {
+      width: 190px;
+      height: 100%;
+      border: none;
+      outline: none;
+      padding-left: 16px;
+      font-size: 20px;
+      &::placeholder {
+        font-size: 20px;
+        color: var(--main-color);
+        opacity: 0.4;
+      }
+    }
+    button {
+      height: 100%;
+      padding: 0 20px;
+      text-align: center;
+      border: none;
+      outline: none;
+      background-color: #77574c;
+      font-size: 16px;
+      color: white;
+      cursor: pointer;
+    }
   }
 }

@@ -10,7 +10,7 @@ import NewsCard from "@/components/news-card";
 import ServiceCard from "@/components/service-card";
 import EmailInput from "@/components/email-input";
 import Carousel from "@/components/carousel";
-import video from "/videos/HTML.mp4.json"
+// import video from "/videos/HTML.mp4.json"
 
 import "./home.scss";
 
@@ -187,11 +187,7 @@ export default function Home() {
               Video galareya <Link href="#">view all</Link>
             </h2>
             <div className="video-box">
-              <Video
-                className="custom-video"
-                src={video}
-                poster={"/assets/images/videoImg.jpg"}
-              />
+              <video src="/assets/videos/HTML.mp4" controls/>
             </div>
           </div>
         </div>
