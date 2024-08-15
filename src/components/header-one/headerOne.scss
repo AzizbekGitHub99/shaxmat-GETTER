@@ -1,5 +1,5 @@
 .header-one {
-  // position: -webkit-sticky;
+  position: -webkit-sticky;
   position: sticky;
   height: 230px;
   margin-bottom: -230px;
@@ -29,7 +29,7 @@
         &:hover {
           color: var(--main-color);
         }
-        a{
+        a {
           color: white;
           text-decoration: none;
         }
@@ -44,7 +44,7 @@
     top: 230px;
     transition: top 0.3s;
     ul {
-      transition: opacity 1s ;
+      transition: opacity 1s;
       padding: 0;
       opacity: 1;
     }
@@ -231,6 +231,9 @@
   .header-one {
     height: 130px;
     top: 0;
+    .open {
+      top: 130px;
+    }
     .top {
       display: none;
     }
@@ -260,6 +263,9 @@
   .header-one {
     padding: 8px 0;
     height: 100px;
+    .open {
+      top: 100px;
+    }
     .bottom {
       &__container {
         .logo {

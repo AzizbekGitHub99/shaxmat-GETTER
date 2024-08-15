@@ -20,7 +20,7 @@ const HeaderOne = () => {
   useEffect(() => {
     const handleScroll = () => {
       const offset = window.scrollY;
-      if (offset > 220) {
+      if (offset > 200) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -49,30 +49,30 @@ const HeaderOne = () => {
           }
         >
           <ul ref={ref} onClick={() => setIsMenuOpen(false)}>
-          <li>
-                  <NavLink href="/federation">Federatsiya</NavLink>
-                </li>
-                <li>
-                  <NavLink href="#">Xalqaro munosabatlar</NavLink>
-                </li>
-                <li>
-                  <NavLink href="/news">Yangiliklar</NavLink>
-                </li>
-                <li>
-                  <NavLink href="#">Matbuot xizmati</NavLink>
-                </li>
-                <li>
-                  <NavLink href="#">Klublar</NavLink>
-                </li>
-                <li>
-                  <NavLink href="#">Turnirlar</NavLink>
-                </li>
-                <li>
-                  <NavLink href="#">Arxiv</NavLink>
-                </li>
-                <li>
-                  <NavLink href="#">Aloqa</NavLink>
-                </li>
+            <li>
+              <NavLink href="/federation">Federatsiya</NavLink>
+            </li>
+            <li>
+              <NavLink href="#">Xalqaro munosabatlar</NavLink>
+            </li>
+            <li>
+              <NavLink href="/news">Yangiliklar</NavLink>
+            </li>
+            <li>
+              <NavLink href="#">Matbuot xizmati</NavLink>
+            </li>
+            <li>
+              <NavLink href="#">Klublar</NavLink>
+            </li>
+            <li>
+              <NavLink href="#">Turnirlar</NavLink>
+            </li>
+            <li>
+              <NavLink href="#">Arxiv</NavLink>
+            </li>
+            <li>
+              <NavLink href="#">Aloqa</NavLink>
+            </li>
           </ul>
         </div>
         <div className="top">
