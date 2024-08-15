@@ -427,6 +427,7 @@
       flex-wrap: wrap;
       .tournaments {
         width: 100%;
+        height: 550px;
       }
       .clubs {
         width: 100%;
@@ -517,7 +518,11 @@
   }
 
   .tournaments-and-clubs {
+    margin-bottom: 60px;
     &__container {
+      .tournaments{
+        height: 450px;
+      }
       .clubs {
         &__wrapper {
           padding: 40px 10px 40px 24px;
@@ -541,7 +546,7 @@
   }
 
   .galeries {
-    margin-bottom: 120px;
+    margin-bottom: 100px;
     &__container {
       flex-wrap: wrap;
       gap: 30px;
@@ -558,11 +563,10 @@
   }
 
   .contact {
-    background: linear-gradient(to bottom, #f4efed 60%, #e8ebee 40%);
+    background: linear-gradient(to bottom, #f4efed 55%, #e8ebee 45%);
     .contact__container {
       display: flex;
       flex-wrap: wrap;
-      // gap: 70px;
       justify-content: center;
       color: var(--main-color);
       .left {
@@ -574,6 +578,223 @@
         width: 100%;
         height: 50%;
         padding: 32px 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    margin-bottom: 24px;
+  }
+
+  .hero {
+    &__card {
+      &__left {
+        h1 {
+          font-size: 24px;
+          margin-bottom: 12px;
+        }
+        p {
+          font-weight: 400;
+          &:last-child {
+            margin-top: 24px;
+          }
+        }
+      }
+      &__right {
+        .img-box {
+          height: 140px;
+        }
+      }
+    }
+  }
+
+  .news-and-announces {
+    margin-bottom: 60px;
+    &__container {
+      gap: 60px;
+      .news {
+        &__wrapper {
+          display: grid;
+          grid-template-columns: auto auto;
+          grid-template-rows: 220px 330px;
+          .cardLg {
+            grid-column: 1 / 2 span;
+            height: 220px;
+          }
+          .cardMd {
+            height: 330px;
+          }
+        }
+      }
+      .announces {
+        &__wrapper {
+          gap: 50px;
+          .announce {
+            h1 {
+              font-size: 16px;
+            }
+            p {
+              font-size: 14px;
+              font-weight: 400;
+            }
+          }
+          &__btn {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .services {
+    margin-bottom: 60px;
+    &__wrapper {
+      gap: 40px 5px;
+    }
+  }
+
+  .tournaments-and-clubs {
+    margin-bottom: 60px;
+    &__container {
+      gap: 12px;
+      .tournaments {
+        height: 320px;
+      }
+      .clubs {
+        height: 560px;
+        &__wrapper {
+          padding: 40px 10px 40px 20px;
+          gap: 40px;
+          a {
+            font-size: 16px;
+          }
+          .popular-clubs {
+            display: flex;
+            justify-content: space-between;
+            gap: 0;
+            width: 100%;
+            .popular-club {
+              gap: 12px;
+              &__head {
+                width: 140px;
+                height: 140px;
+              }
+              &__body {
+                h2 {
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+          .other-clubs {
+            gap: 12px;
+            justify-content: space-between;
+            &__box {
+              margin-right: 40px;
+              .other-club {
+                margin-right: -35px;
+                width: 70px;
+                height: 70px;
+                &:last-child {
+                  .overlay {
+                    font-size: 18px;
+                    font-weight: 500;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .about {
+    margin-bottom: 100px;
+    &-container {
+      justify-content: space-between;
+      &__left {
+        a {
+          font-size: 16px;
+        }
+      }
+      &__right {
+        height: 200px;
+      }
+    }
+  }
+
+  .galeries {
+    margin-bottom: 120px;
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      .photo {
+        h2 {
+          font-size: 16px;
+          margin-bottom: 24px;
+          a {
+            font-weight: 400;
+          }
+        }
+        &__wrapper {
+          grid-template-rows: 100px 100px;
+          gap: 5px;
+          .img-box {
+            img {
+              border-radius: 3px;
+            }
+          }
+        }
+      }
+      .video {
+        h2 {
+          font-size: 16px;
+          margin-bottom: 24px;
+          a {
+            font-weight: 400;
+          }
+        }
+        .video-box {
+          video {
+            height: 210px;
+          }
+        }
+      }
+    }
+  }
+
+  .contact {
+    background: linear-gradient(to bottom, #f4efed 50%, #e8ebee 50%);
+    .contact__container {
+      .left {
+        h2 {
+          font-size: 18px;
+        }
+        p {
+          margin-bottom: 16px;
+          font-size: 14px;
+        }
+      }
+      .right {
+        h2 {
+          font-weight: 500;
+          font-size: 18px;
+        }
+        p {
+          margin-bottom: 35px;
+          font-size: 14px;
+        }
+        .socials {
+          gap: 20px;
+          .img-box {
+            width: 24px;
+            height: 24px;
+          }
+        }
       }
     }
   }

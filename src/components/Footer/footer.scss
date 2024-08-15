@@ -133,3 +133,99 @@
     }
   }
 }
+
+@media (max-width: 1260px) {
+  .footer {
+    .top {
+      &__container {
+        display: flex;
+        flex-wrap: wrap;
+        .left {
+          width: 100%;
+          border-right: none;
+          .footer__navs {
+            height: 50px;
+          }
+        }
+        .right {
+          height: 150px;
+          width: 100%;
+          padding: 45px 0 0 0;
+          gap: 24px 40px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .footer {
+    padding: 0 15px;
+    .top {
+      &__container {
+        .left {
+          padding-bottom: 0;
+          .footer__navs {
+            height: 106px;
+          }
+        }
+        .right {
+          height: 248px;
+        }
+      }
+    }
+    .bottom {
+      &__container {
+        .left {
+          width: 60%;
+          gap: 0;
+          justify-content: space-between;
+        }
+        .right {
+          width: 40%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  .footer {
+    padding: 0 15px;
+    .top {
+      &__container {
+        .left {
+        flex-wrap: wrap;
+        }
+        .right {
+          height: fit-content;
+          padding: 45px 0;
+          &__buttons {
+            flex-wrap: wrap;
+          }
+        }
+      }
+    }
+    .bottom {
+      &__container {
+        flex-wrap: wrap;
+        padding: 12px 24px ;
+        gap: 30px;
+        .left {
+          width: 100%;
+          gap: 0;
+          justify-content: space-between;
+        }
+        .right {
+          width: 100%;
+          padding: 13px 0;
+          display: block;
+          .socials {
+            width: 100%;
+            gap: 20px;
+          }
+        }
+      }
+    }
+  }
+}

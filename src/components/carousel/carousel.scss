@@ -14,7 +14,7 @@
   flex-direction: column;
   align-items: start;
   justify-content: space-between;
-  a{
+  a {
     text-decoration: none;
     border-radius: 30px;
     padding: 14px 30px;
@@ -23,7 +23,7 @@
     font-weight: 800;
     font-size: 18px;
   }
-  h1{
+  h1 {
     font-weight: 800;
     font-size: 56px;
     line-height: 58px;
@@ -32,7 +32,7 @@
   }
 }
 
-.swiper-pagination{
+.swiper-pagination {
   margin-bottom: 40px;
   padding-left: 50px;
   text-align: start;
@@ -52,7 +52,6 @@
       transform: rotate(-90deg);
     }
   }
-
 }
 
 .swiper-pagination-bullet-active {
@@ -68,5 +67,65 @@
   }
   to {
     stroke-dashoffset: 0;
+  }
+}
+
+@media (max-width: 1120px) {
+  .swiper-slide {
+    padding: 30px 40px;
+    h1 {
+      font-size: 46px;
+      line-height: 48px;
+      margin-bottom: 40px;
+    }
+  }
+  .swiper-pagination-bullet-active {
+    svg {
+      stroke: white;
+      animation: circleBar 6450ms linear;
+    }
+  }
+}
+
+@media (max-width: 930px) {
+  .swiper-slide {
+    padding: 40px 24px;
+    h1 {
+      font-size: 40px;
+      line-height: 42px;
+    }
+  }
+
+  .swiper-pagination {
+    padding-left: 24px;
+  }
+  .swiper-pagination-bullet-active {
+    svg {
+      stroke: white;
+      animation: circleBar 6450ms linear;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .swiper-slide {
+    padding: 40px 24px;
+    h1 {
+      font-size: 28px;
+      line-height: 36px;
+      margin-bottom: 60px;
+    }
+    a {
+      font-size: 16px;
+    }
+  }
+  .swiper-pagination {
+    margin-bottom: 20px;
+  }
+  .swiper-pagination-bullet-active {
+    svg {
+      stroke: white;
+      animation: circleBar 6450ms linear;
+    }
   }
 }

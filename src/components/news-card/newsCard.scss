@@ -12,8 +12,8 @@
   color: white;
   text-decoration: none;
   cursor: pointer;
-  &::after{
-    transition: .3s linear;
+  &::after {
+    transition: 0.3s linear;
     content: "";
     position: absolute;
     top: 0;
@@ -24,44 +24,44 @@
       to top,
       #020713 1.3%,
       rgba(10, 18, 38, 0) 83.46%
-      );
-      opacity: 0;
-    }
-    &:hover{
-      &::after {
-        opacity: 1;
-      }
-    }
-    h1 {
-      width: 70%;
-      font-weight: 800;
-      font-size: 34px;
-      line-height: 37px;
-      z-index: 10;
-    }
-    p {
-      z-index: 10;
-      width: 100%;
-      font-weight: 400;
-      font-size: 15px;
-      opacity: 0.5;
+    );
+    opacity: 0;
+  }
+  &:hover {
+    &::after {
+      opacity: 1;
     }
   }
-  
-  .cardMd {
-    color: var(--main-color);
-    text-decoration: none;
-    cursor: pointer;
-    height: 100%;
-    &__head {
-      position: relative;
-      width: 100%;
-      height: 210px;
-      img{
-        object-fit: cover;
-      }
-    &::after{
-      transition: .3s linear;
+  h1 {
+    width: 70%;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 37px;
+    z-index: 10;
+  }
+  p {
+    z-index: 10;
+    width: 100%;
+    font-weight: 400;
+    font-size: 15px;
+    opacity: 0.5;
+  }
+}
+
+.cardMd {
+  color: var(--main-color);
+  text-decoration: none;
+  cursor: pointer;
+  height: 100%;
+  &__head {
+    position: relative;
+    width: 100%;
+    height: 210px;
+    img {
+      object-fit: cover;
+    }
+    &::after {
+      transition: 0.3s linear;
       content: "";
       position: absolute;
       top: 0;
@@ -75,7 +75,7 @@
       );
       opacity: 0;
     }
-    &:hover{
+    &:hover {
       &::after {
         opacity: 1;
       }
@@ -92,6 +92,51 @@
       font-size: 15px;
       font-weight: 400;
       opacity: 0.6;
+    }
+  }
+}
+
+@media (max-width: 1120px) {
+  .cardLg {
+    padding: 30px;
+    gap: 30px;
+    height: 340px;
+    h1 {
+      width: 90%;
+      font-size: 30px;
+      line-height: 32px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .cardLg {
+    padding: 23px 16px;
+    gap: 20px;
+    height: 220px;
+    h1 {
+      width: 100%;
+      font-size: 16px;
+      line-height: 22px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  .cardMd {
+    &__head {
+      height: 200px;
+    }
+    &__body {
+      padding-top: 16px;
+      h1 {
+        font-size: 16px;
+        font-weight: 800;
+        margin-bottom: 24px;
+      }
+      p {
+        font-size: 14px;
+      }
     }
   }
 }
