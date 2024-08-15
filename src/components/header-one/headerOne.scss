@@ -1,13 +1,57 @@
 .header-one {
-  position: -webkit-sticky;
+  // position: -webkit-sticky;
   position: sticky;
   height: 230px;
   margin-bottom: -230px;
-  z-index: 100;
+  z-index: 20;
   top: -90px;
-  transition: all 0.2s linear;
+  transition: top 0.2s linear;
+  .burger-menu {
+    display: block;
+    position: absolute;
+    top: -250px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    transition: top 0.3s linear;
+    z-index: -15;
+    ul {
+      padding: 0;
+      opacity: 0;
+      transition: all 0s;
+      li {
+        list-style: none;
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-weight: 400;
+        transition: all 0.3s linear;
+        &:hover {
+          color: var(--main-color);
+        }
+        a{
+          color: white;
+          text-decoration: none;
+        }
+      }
+      .active {
+        text-decoration: underline;
+      }
+    }
+  }
+  .open {
+    z-index: -15;
+    top: 230px;
+    transition: top 0.3s;
+    ul {
+      transition: opacity 1s ;
+      padding: 0;
+      opacity: 1;
+    }
+  }
   .top {
     height: 90px;
+    z-index: 20;
     &__container {
       display: flex;
       justify-content: space-between;
@@ -65,7 +109,9 @@
     }
   }
   .bottom {
+    z-index: 20;
     &__container {
+      z-index: 20;
       display: flex;
       .logo {
         position: relative;
