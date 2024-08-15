@@ -470,6 +470,10 @@
   }
 }
 
+@media (max-width: 1060px) {
+  .hero{height: calc(100vh + 100px);}
+}
+
 @media (max-width: 930px) {
   .hero {
     &__card {
@@ -581,6 +585,10 @@
       }
     }
   }
+}
+
+@media (max-width: 630px) {
+  .hero{height: calc(100vh + 130px);}
 }
 
 @media (max-width: 480px) {
