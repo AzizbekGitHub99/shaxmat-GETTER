@@ -37,17 +37,7 @@ const HeaderOne = () => {
   return (
     <Fragment>
       <header className={scrolled ? "header-one scrolled" : "header-one"}>
-        <div
-          className={
-            isMenuOpen
-              ? scrolled
-                ? "burger-menu open scrolled"
-                : "burger-menu open"
-              : scrolled
-              ? "burger-menu scrolled"
-              : "burger-menu"
-          }
-        >
+        <div className={isMenuOpen ? "burger-menu open" : "burger-menu"}>
           <ul ref={ref} onClick={() => setIsMenuOpen(false)}>
             <li>
               <NavLink href="/federation">Federatsiya</NavLink>
