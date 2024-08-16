@@ -88,6 +88,14 @@ const HeaderTwo = () => {
             <Image src="/assets/icons/dark__logo.png" fill alt="logo" />
           </Link>
           <div className="bottom__container__menu">
+            <div className="hidden-bottom">
+              <span>Toshkent 5+</span>
+              <div className="lan-btns">
+                <button>Ru</button>
+                <button>Uz</button>
+                <button>Eng</button>
+              </div>
+            </div>
             <button className="bottom__container__menu__all-btn">
               <span></span> Barchasi
             </button>
