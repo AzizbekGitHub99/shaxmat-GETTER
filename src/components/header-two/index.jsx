@@ -1,13 +1,52 @@
+"use client"
+
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+
+import { useDetectClickOutside } from "react-detect-click-outside";
 
 import NavLink from "../navlink";
 
 import "./headerTwo.scss";
 
 const HeaderTwo = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const ref = useDetectClickOutside({
+    onTriggered: () => setIsMenuOpen(false),
+  });
+
   return (
     <header className="header-two">
+      <div className={isMenuOpen ? "burger-menu open" : "burger-menu"}>
+        <ul ref={ref} onClick={() => setIsMenuOpen(false)}>
+          <li>
+            <NavLink href="/federation">Federatsiya</NavLink>
+          </li>
+          <li>
+            <NavLink href="#">Xalqaro munosabatlar</NavLink>
+          </li>
+          <li>
+            <NavLink href="/news">Yangiliklar</NavLink>
+          </li>
+          <li>
+            <NavLink href="#">Matbuot xizmati</NavLink>
+          </li>
+          <li>
+            <NavLink href="#">Klublar</NavLink>
+          </li>
+          <li>
+            <NavLink href="#">Turnirlar</NavLink>
+          </li>
+          <li>
+            <NavLink href="#">Arxiv</NavLink>
+          </li>
+          <li>
+            <NavLink href="#">Aloqa</NavLink>
+          </li>
+        </ul>
+      </div>
       <div className="top">
         <div className="container top__container">
           <div className="top__container__left">
@@ -96,7 +135,10 @@ const HeaderTwo = () => {
                 <button>Eng</button>
               </div>
             </div>
-            <button className="bottom__container__menu__all-btn">
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="bottom__container__menu__all-btn"
+            >
               <span></span> Barchasi
             </button>
             <ul className="bottom__container__menu__navs">

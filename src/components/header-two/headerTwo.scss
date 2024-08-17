@@ -1,11 +1,59 @@
 .header-two {
   position: sticky;
   background-color: white;
-  z-index: 100;
+  z-index: 20;
   margin-bottom: 0;
   border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
   top: -50px;
+  .burger-menu {
+    display: block;
+    position: absolute;
+    top: -1000%;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    transition: top 0.3s linear;
+    z-index: -15;
+    background-color: white;
+    ul {
+      padding: 0;
+      opacity: 0;
+      transition: all 0s;
+      li {
+        list-style: none;
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-weight: 400;
+        transition: all 0.3s linear;
+        &:hover {
+          color: var(--main-color);
+        }
+        a {
+          color: var(--main-color);
+          text-decoration: none;
+        }
+      }
+      .active {
+        text-decoration: underline;
+        font-weight: 600;
+      }
+    }
+  }
+  .open {
+    z-index: -15;
+    top: 0;
+    padding-top: 150px;
+    transition: top 0.3s;
+    box-shadow: 0 0 10px 2px var(--main-color);
+    ul {
+      transition: opacity 1.2s;
+      padding: 0;
+      opacity: 1;
+    }
+  }
   .top {
+    z-index: 20;
     height: 60px;
     &__container {
       display: flex;
@@ -62,6 +110,7 @@
     }
   }
   .bottom {
+    z-index: 20;
     padding-bottom: 15px;
     &__container {
       display: flex;
