@@ -90,6 +90,40 @@ const SignUp = () => {
                   required
                 />
               </div>
+              <div className="input-box">
+                <label htmlFor="lastName">Telefon raqami</label>
+                <input
+                  type="text"
+                  id="phone"
+                  placeholder="Telefon raqami"
+                  required
+                />
+              </div>
+              <div className="input-box">
+                <label htmlFor="email">E-mail</label>
+                <input type="email" id="email" placeholder="E-mail" required />
+              </div>
+              <div className="input-box">
+                <label htmlFor="educate">{`O'qish yoki ish joyi`}</label>
+                <input
+                  type="text"
+                  id="educate"
+                  placeholder="O'qish yoki ish joyi"
+                />
+              </div>
+              <div className="input-box">
+                <label htmlFor="birthDay">Login</label>
+                <input type="text" id="login" placeholder="Login" required />
+              </div>
+              <div className="input-box">
+                <label htmlFor="payment">{`To'lov maqsadi`}</label>
+                <input
+                  type="text"
+                  id="payment"
+                  placeholder="To'lov maqsadi"
+                  required
+                />
+              </div>
               <div className="input-box image-input">
                 <label htmlFor="image-download">Image</label>
                 <div className="image-box">
@@ -123,40 +157,6 @@ const SignUp = () => {
                   onChange={downloadImage}
                   type="file"
                   id="image-download"
-                  required
-                />
-              </div>
-              <div className="input-box">
-                <label htmlFor="lastName">Telefon raqami</label>
-                <input
-                  type="text"
-                  id="phone"
-                  placeholder="Telefon raqami"
-                  required
-                />
-              </div>
-              <div className="input-box">
-                <label htmlFor="email">E-mail</label>
-                <input type="email" id="email" placeholder="E-mail" required />
-              </div>
-              <div className="input-box">
-                <label htmlFor="educate">{`O'qish yoki ish joyi`}</label>
-                <input
-                  type="text"
-                  id="educate"
-                  placeholder="O'qish yoki ish joyi"
-                />
-              </div>
-              <div className="input-box">
-                <label htmlFor="birthDay">Login</label>
-                <input type="text" id="login" placeholder="Login" required />
-              </div>
-              <div className="input-box">
-                <label htmlFor="payment">{`To'lov maqsadi`}</label>
-                <input
-                  type="text"
-                  id="payment"
-                  placeholder="To'lov maqsadi"
                   required
                 />
               </div>
