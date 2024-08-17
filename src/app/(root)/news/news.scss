@@ -165,26 +165,20 @@
       flex-wrap: wrap;
       .aside {
         width: 100%;
-        min-width: max-content;
         height: 60px;
         border-bottom: 1px solid #04305b33;
         &::-webkit-scrollbar {
           display: none;
         }
-        overflow: hidden;
+        overflow-x: scroll;
         ul {
           padding: 17px 14px;
-          width: 100%;
-          min-width: max-content;
           gap: 32px;
           display: flex;
           border: none;
-          overflow: scroll;
-          &::-webkit-scrollbar {
-            display: none;
-          }
           li {
             margin-bottom: 0;
+            white-space: nowrap;
             height: 25px;
             width: max-content;
           }
@@ -217,7 +211,7 @@
         width: 100%;
         display: -webkit-box;
         -webkit-box-orient: vertical;
-        --line-clamp: 5;
+        -webkit-line-clamp: 5;
         overflow: hidden;
       }
       img {
