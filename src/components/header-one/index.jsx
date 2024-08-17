@@ -17,7 +17,6 @@ const HeaderOne = () => {
   const ref = useDetectClickOutside({
     onTriggered: () => setIsMenuOpen(false),
   });
-  console.log(ref);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,28 +40,28 @@ const HeaderOne = () => {
       <header className={scrolled ? "header-one scrolled" : "header-one"}>
         <div className={isMenuOpen ? "burger-menu open" : "burger-menu"}>
           <ul ref={ref} onClick={() => setIsMenuOpen(false)}>
-            <li >
+            <li>
               <NavLink href="/federation">Federatsiya</NavLink>
             </li>
-            <li >
+            <li>
               <NavLink href="#">Xalqaro munosabatlar</NavLink>
             </li>
-            <li >
+            <li>
               <NavLink href="/news">Yangiliklar</NavLink>
             </li>
-            <li >
+            <li>
               <NavLink href="#">Matbuot xizmati</NavLink>
             </li>
-            <li >
+            <li>
               <NavLink href="#">Klublar</NavLink>
             </li>
-            <li >
+            <li>
               <NavLink href="#">Turnirlar</NavLink>
             </li>
-            <li >
+            <li>
               <NavLink href="#">Arxiv</NavLink>
             </li>
-            <li >
+            <li>
               <NavLink href="#">Aloqa</NavLink>
             </li>
           </ul>
